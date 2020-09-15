@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <img src="vulf-image.jpg" alt="vulfpeck logo" width="200" height="200">
+    <br>
+    <a href="mailto:hannerk@gmatc.matc.edu">Contact Ken</a>
+    <h1>My Favorite Band</h1>
+    <!-- Simple Table -->
+    <table id="simple-table" border="1" cellspacing="0">
+        <tr>
+            <th>Album</th>
+            <th>URL</th>
+        </tr>
+        <tr>
+            <td>Thrill of the Arts</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/thrill-of-the-arts">Thrill of the Arts Bandcamp</a></td>
+        </tr>
+        <tr>
+            <td>Fugue State</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/fugue-state">Fugue State Bandcamp</a></td>
+        </tr>
+    <!-- Complex Table-->
+    </table>
+    scope="column"
+    <table id="complex-table" border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Featuring</th>
+                <th scope="column">GUEST</th>
+                <th scope="column">TRACK NUM</th>
+                <th scope="column">I OWN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Thrill of the Arts</td>
+                <td colspan="2">CORY WONG</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5">&copy; Ben Kenobi 2020</td>
+        </tfoot>             
+    </table>
+
+</body>
+</html>
