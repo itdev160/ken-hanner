@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- NOTE: HTML validators are advising of several obsolete attributes.
+                I have decided to keep them in as this is how you walked us through this assignment. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,47 +7,372 @@
     <title>Activity 2</title>
 </head>
 <body>
+    <h1>My Favorite Band: Vulfpeck</h1>
     <img src="vulf-image.jpg" alt="vulfpeck logo" width="200" height="200">
-    <br>
-    <a href="mailto:hannerk@gmatc.matc.edu">Contact Ken</a>
-    <h1>My Favorite Band</h1>
     <!-- Simple Table -->
     <table id="simple-table" border="1" cellspacing="0">
         <tr>
             <th>Album</th>
             <th>URL</th>
+            <th>Year</th>
         </tr>
         <tr>
-            <td>Thrill of the Arts</td>
-            <td><a href="https://vulfpeck.bandcamp.com/album/thrill-of-the-arts">Thrill of the Arts Bandcamp</a></td>
+            <td>Mit Peck</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/mit-peck">Mit Peck Bandcamp</a></td>
+            <td>2011</td>
+        </tr>
+        <tr>
+            <td>Vollmilch</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/vollmilch">Vollmilch Bandcamp</a></td>
+            <td>2012</td>
+        </tr>
+        <tr>
+            <td>My First Car</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/my-first-car">My First Car Bandcamp</a></td>
+            <td>2013</td>
         </tr>
         <tr>
             <td>Fugue State</td>
             <td><a href="https://vulfpeck.bandcamp.com/album/fugue-state">Fugue State Bandcamp</a></td>
+            <td>2014</td>
         </tr>
-    <!-- Complex Table-->
+        <tr>
+            <td>Thrill of the Arts</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/thrill-of-the-arts">Thrill of the Arts Bandcamp</a></td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>The Beautiful Game</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/the-beautiful-game">The Beautiful Game Bandcamp</a></td>
+            <td>2016</td>
+        </tr>
+        <tr>
+            <td>Mr Finish Line</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/mr-finish-line">Mr Finish Line Bandcamp</a></td>
+            <td>2017</td>
+        </tr>
+        <tr>
+            <td>Hill Climber</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/hill-climber">Hill Climber Bandcamp</a></td>
+            <td>2018</td>
+        </tr>
+        <tr>
+            <td>Live at Madison Square Garden</td>
+            <td><a href="https://vulfpeck.bandcamp.com/album/live-at-madison-square-garden">Live at Madison Sqaure Garden Bandcamp</a></td>
+            <td>2019</td>
+        </tr>
     </table>
-    scope="column"
+    <br>
+    <!-- Complex Table-->
     <table id="complex-table" border="1" cellspacing="0">
         <thead>
             <tr>
-                <th>Featuring</th>
-                <th scope="column">GUEST</th>
-                <th scope="column">TRACK NUM</th>
-                <th scope="column">I OWN</th>
+                <th scope="col">Featuring</th>
+                <th scope="col">Mit Peck</th>
+                <th scope="col">Vollmilch</th>
+                <th scope="col">My First Car</th>
+                <th scope="col">Fugue State</th>
+                <th scope="col">Thrill of the Arts</th>
+                <th scope="col">The Beautiful Game</th>
+                <th scope="col">Mr Finish Line</th>
+                <th scope="col">Hill Climber</th>
+                <th scope="col">Live at Madison Square Garden</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td scope="row">Thrill of the Arts</td>
-                <td colspan="2">CORY WONG</td>
-                <td>Yes</td>
+                <td scope="row">Jack, Joe, Woody, Theo</td>
+                <td colspan="9" style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Joey Dosik</td>
+                <td style="background-color:tomato;">No</td>
+                <td colspan="2" style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td colspan="5" style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Antwaun Stanley</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+                <td colspan="7" style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Christine Hucal</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td colspan="3" style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Richie Rodriguez</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td colspan="2" style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Mark Dover</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Blake Mills</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Charles Jones</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">David T. Walker</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Tyler Duncan</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Mushy Krongold</td>
+                <td colspan="4" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Michael Winograd</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Cory Wong</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td colspan="4" style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Laura Mace</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Anne Berg</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Gabe Noel</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td colspan="2" style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Adam Levy</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Jamire Williams</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Pegasus Warning</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Bethanni Grecynski</td>
+                <td colspan="5" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="3" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Ryan Lerman</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">James Gadson</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Michael Bland</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Coco O.</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Bootsy Collins</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Baby Theo</td>
+                <td colspan="6" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td colspan="2" style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Larry Goldings</td>
+                <td colspan="7" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Monica Martin</td>
+                <td colspan="7" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Mike Viola</td>
+                <td colspan="7" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Louis Cole</td>
+                <td colspan="7" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+                <td style="background-color:tomato;">No</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Melissa Gardiner</td>
+                <td colspan="8" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Nate Smith</td>
+                <td colspan="8" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Dave Koz</td>
+                <td colspan="8" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Chris Thile</td>
+                <td colspan="8" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td scope="row">Chris Grymes</td>
+                <td colspan="8" style="background-color:tomato;">No</td>
+                <td style="background-color:lightgreen;">Yes</td>
             </tr>
         </tbody>
         <tfoot>
-            <td colspan="5">&copy; Ben Kenobi 2020</td>
+            <tr>
+                <td colspan="10">&copy; Ben Kenobi 2020</td>
+            </tr>
         </tfoot>             
     </table>
-
+    <footer>
+        <a href="mailto:webmaster@example.com">Contact Ken</a><br>
+        <a href="../index.html">Home</a> &#9632;
+        <a href="../activity-1/index.html">Activity-1</a> &#9632;
+        <a href="../activity-2/index.html">Activity-2</a> &#9632;
+    </footer>
 </body>
 </html>
