@@ -1,0 +1,89 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #555;
+}
+
+h1 {
+    color: #555;
+    background-color: #eee;
+}
+
+h3 {
+    font-weight: 5000;
+}
+
+img {
+    width: 150px;
+    text-align: left;
+}
+
+figcaption span {
+    font-size: .85em;
+}
+
+p#product-description {
+    margin: 20px 0 20px 0;
+    text-align: justify;
+}
+
+div.review {
+    padding: 10px;
+    background-color: #eee;
+    margin: 20px 0 20px 0;
+    line-height: 1.6;
+}
+
+/* attribute selector */
+button[class$="button"] {
+    border: 1px solid grey;
+    padding: 10px;
+    box-shadow: 5px 0px 8px blue, 10px 0px 8px white, 15px 0px 8px #ff0000;
+}
+
+/* footer popup */
+.button {
+    background-color: white;
+    border: 10px white;
+}
+
+.button img {
+    height: 60px;
+    width: auto;
+}
+
+.footerdropup {
+    position: relative;
+    display: inline-block;
+}
+
+.menucontent {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    bottom: 60px;
+    background-color:rgb(190, 190, 190);
+}
+
+.menucontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.button:hover {
+    box-shadow: 3px 6px 5px rgb(54, 56, 58);
+}
+
+.menucontent a:hover {
+    background-color: rgb(128, 128, 128);
+    box-shadow: 3px 6px 5px rgb(54, 56, 58);
+}
+
+.footerdropup:hover .menucontent {
+    display: block;
+}
+
+.footerdropup:hover .dropbtn {
+    background-color: hsl(0, 0%, 70%);
+}
